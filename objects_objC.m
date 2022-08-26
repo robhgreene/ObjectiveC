@@ -4,6 +4,10 @@ int main (int argc, const char * argv[]) {
    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
    
    NSLog (@"hello world");
+
+   // non-existent object in memory
+   NSString *nothing = nil;
+
    [pool drain];
    return 0;
 }
