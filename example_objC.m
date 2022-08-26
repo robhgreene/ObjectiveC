@@ -1,10 +1,13 @@
 #import <Foundation/Foundation.h>
+ 
+int main (int argc, const char * argv[])
+{
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    NSArray *officeSupplies = @[@"Pencils", @"Paper"];
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-
-        NSLog(@"Hello, World!");
-    }
-
-    return 0;
+    NSLog(@"First : %@", officeSupplies[0]);
+    NSLog(@"Office Supplies : %@", officeSupplies);
+ 
+   [pool drain];
+   return 0;
 }
